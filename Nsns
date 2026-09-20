@@ -1,0 +1,9 @@
+local shared = odh_shared_plugins
+print("[TEST] GitHub file executed")
+if shared and type(shared.CreateTab) == "function" then
+	print("[TEST] CreateTab is available")
+	local tab = shared.CreateTab("Test Tab From GitHub", "")
+	print("[TEST] Tab created")
+else
+	print("[TEST] CreateTab is NOT available in this environment")
+end
