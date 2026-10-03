@@ -72,7 +72,7 @@ end
 local countdownDuration = 2.5
 local frameSize = UDim2.new(0, 100, 0, 50)
 local framePosition = UDim2.new(0.5, -50, 0.5, -100)
-local cdFontSize = 22
+local cdFontSize = 48
 
 local enabled = false
 local firstJumpTiming = 0.24
@@ -141,7 +141,7 @@ local function buildCooldownGui()
 
 	cdFrame = Instance.new("Frame")
 	cdFrame.Name = "CooldownFrame"
-	cdFrame.Size = UDim2.new(0, 110, 0, 28)
+	cdFrame.Size = UDim2.new(0, 150, 0, 60)
 	cdFrame.Position = UDim2.new(0, 20, 0.5, 0)
 	cdFrame.BackgroundTransparency = 1
 	cdFrame.BorderSizePixel = 0
